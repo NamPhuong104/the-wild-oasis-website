@@ -113,7 +113,7 @@ export async function createBooking(bookingData, formData) {
   console.log(newBooking);
 
   revalidatePath(`/cabin/${bookingData.cabinId}`);
-  redirect('/cabins//thankyou');
+  redirect('/cabins/thankyou');
 }
 
 export async function signInAction() {
